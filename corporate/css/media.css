@@ -1,0 +1,187 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px) {
+  .carousel-caption {
+    left: 10%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .header-time {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+  .navbar {
+    top: 7px;
+  }
+
+  button.nav-button {
+    color: #fff;
+  }
+
+  .services ul {
+    margin-bottom: 30px;
+  }
+
+  .adventages {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .advant-block {
+    margin: 20px auto;
+  }
+
+  article a {
+    margin-bottom: 20px;
+  }
+
+  .header {
+    padding: 5px;
+  }
+
+  a.btn-call {
+    line-height: 36px;
+    margin: 10px 0 0 15px;
+    padding: 10px 20px;
+  }
+
+  .picture {
+    display: none;
+  }
+
+  button.nav-button {
+    display: block;
+  }
+
+  .header .logo {
+    margin: 15px auto;
+  }
+
+  .header .header-info {
+    margin: 22px auto;
+  }
+
+  section.contacts .row > div {
+    margin: 10px 0;
+  }
+
+  section.contacts {
+    padding-top: 20px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .header .corp-name {
+    font-size: 18px;
+  }
+
+  .header .phone {
+    font-size: 14px;
+  }
+
+  .header .header-info {
+    padding-left: 10px;
+    line-height: 25px;
+    margin: 16px auto;
+  }
+
+  .logo img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    a.btn-call {
+      border: none;
+      text-decoration: underline;
+    }
+    a.btn-call:hover {
+      color: #d50000;
+      background-color: transparent;
+    }
+
+    .header .corp-name {
+      font-size: 16px;
+    }
+
+    .header .phone {
+      font-size: 11px;
+    }
+
+}
+
+@media only screen and (max-width : 280px) {
+
+  .header-right {
+    float: none;
+  }
+
+  .header .logo {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 5px;
+  }
+
+  .header .corp-name {
+    font-size: 16px;
+  }
+
+  .header .phone {
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .header .header-info {
+    margin: 5px auto 10px;
+    line-height: 25px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  ul.nav {
+    display: table;
+  }
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

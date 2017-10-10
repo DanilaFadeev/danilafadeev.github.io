@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Ubuntu Regular';
+	src: url('../fonts/Ubuntu-Regular.eot');
+	src: local('☺'), url('../fonts/Ubuntu Regular/Ubuntu-Regular.woff') format('woff'), url('../fonts/Ubuntu Regular/Ubuntu-Regular.ttf') format('truetype'), url('../fonts/Ubuntu Regular/Ubuntu-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu Bold';
+	src: url('../fonts/Ubuntu-Bold.eot');
+	src: local('☺'), url('../fonts/Ubuntu Bold/Ubuntu-Bold.woff') format('woff'), url('..fonts/Ubuntu Bold/Ubuntu-Bold.ttf') format('truetype'), url('../fonts/Ubuntu Bold/Ubuntu-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu Medium';
+	src: url('../fonts/Ubuntu-Medium.eot');
+	src: local('☺'), url('../fonts/Ubuntu Medium/Ubuntu-Medium.woff') format('woff'), url('../fonts/Ubuntu Medium/Ubuntu-Medium.ttf') format('truetype'), url('../fonts/Ubuntu Medium/Ubuntu-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
