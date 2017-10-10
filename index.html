@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>WebDesktop</title>
+</head>
+<body>
+<section id="panel">
+  <div class="left clearfix">
+    <ul class="mainMenu">
+      <li>
+        <a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i> Files</a>
+        <ul class="subMenu">
+          <li id="menuCreate"><a href="#">Create new</a></li>
+          <li><a href="#">Open</a></li>
+          <li id="menuSearch"><a href="#">Search</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Database</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-microchip" aria-hidden="true"></i> Programs</a>
+        <ul class="subMenu">
+          <li><a href="#">Programs manager</a></li>
+          <li><a href="#">Delete programms</a></li>
+          <li><a href="#">Memory using</a></li>
+          <li><a href="#">Space details</a></li>
+        </ul>
+      </li>
+      <li id="search"><i class="fa fa-search-plus" aria-hidden="true"></i> Search</li>
+      <li><a href="" id="settingsOpen"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+    </ul>
+  </div>
+  <div class="right">
+    <div id="time"></div>
+  </div>
+</section>
+<section id="work-area">
+  <div class="tool-menu" id="toolMenu">
+    <ul>
+      <li id="addNew"><i class="fa fa-plus" aria-hidden="true"></i> Create</li>
+      <li id="insert"><i class="fa fa-paste" aria-hidden="true"></i> Insert</li>
+      <li id="reset"><i class="fa fa-undo" aria-hidden="true"></i> Reset</li>
+    </ul>
+  </div>
+  <div class="tool-menu" id="elemMenu">
+    <ul>
+      <li id="retypeElem"><i class="fa fa-wrench" aria-hidden="true"></i> Retype</li>
+      <li id="copyElem"><i class="fa fa-save" aria-hidden="true"></i> Copy</li>
+      <li id="cutElem"><i class="fa fa-scissors" aria-hidden="true"></i> Cut</li>
+      <li id="deleteElem"><i class="fa fa-undo" aria-hidden="true"></i> Delete</li>
+      <li id="infoElem"><i class="fa fa-info-circle" aria-hidden="true"></i> Info</li>
+    </ul>
+  </div>
+</section>
+<div id="newsPanel">
+  <h3>News</h3>
+  <div id="newsBlock">For load the news choose the source in "Settings" > "Account" > "Choose the source"</div>
+</div>
+<div id="searchDialog" class="dialog">
+  <h3>Search</h3>
+  <input type="text" name="query" placeholder="Type something here">
+  <div id="search-results"></div>
+  <div class="search-close">×</div>
+</div>
+<div class="dialog" id="dialogMessage">
+  <div class="dialog-title">Information</div>
+  <div class="dialog-body">Sorry, this function isn't available right now.<br>Comming soon..</div>
+  <button class="dialog-btn">OK</button>
+</div>
+<div class="dialog" id="createDialog">
+  <div class="dialog-title">Element form</div>
+  <div class="dialog-body">
+    <form action="/" name="createForm">
+      <table align="center">
+        <tr>
+          <td>Name:</td><td><input type="text" name="nameElement" value="" placeholder="Untitled1"></td>
+        </tr>
+        <tr>
+          <td>Type:</td>
+          <td><select name="chooseType"></select></td>
+        </tr>
+        <tr>
+          <td><input class="dialog-btn" type="submit" value="Done"></td>
+          <td><button id="createFormClose" class="dialog-btn right">Close</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<div class="settingsDialog" id="settingsDialog">
+  <div id="tab-panel">
+    <div class="tab active">Account</div>
+    <div class="tab">Personalize</div>
+    <div class="tab">Tutorial</div>
+    <div class="tab right" id="closeSettings">&times;</div>
+
+    <div class="tab-content">
+      <div id="accountProfile">
+        <h3>User:</h3>
+        <table>
+          <tr>
+            <td>Username:</td>
+            <td id="username_field"></td>
+            <td>(Click to change)</td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td id="password_field">*********</td>
+            <td>(Click to change)</td>
+          </tr>
+        </table>
+      </div>
+      <div id="desktopsSettings">
+        <h3>Desktops:</h3>
+        <table>
+          <tr>
+            <td><button data-save="1">Save desktop 1</button></td>
+            <td><button data-load="1">Load desktop 1</button></td>
+          </tr>
+        </table>
+        <button id="addDesktop">Add desktop</button>
+      </div>
+      <h3>News:</h3>
+      Choose the source: <select id="newsSource"></select>
+    </div>
+    <div class="tab-content hide">
+      Icons size: <input type="range" min="50" max="120" step="5" value="60" id="iconSize"><br>
+      Wallpaper: <input type="file" id="wallpaperFile"><br>
+      <div id="previewWallpaper"></div>
+    </div>
+    <div class="tab-content hide tutorial">
+      <h3>How to work with items</h3>
+      <ul>
+        <li>Create new item</li>
+        <p>There are two ways to create a new item:</p>
+        <p>1. On the top panel choose "Files" > "Create New"</p>
+        <p>2. Right click on the desktop area and choose "Create"</p>
+        <li>Delete item</li>
+        <p>For deleting the item lets make a right click on it and choose "Delete"</p>
+        <li>Copy, Cut and Paste</li>
+        <p>This operation is the same with the last one. You can also paste items by <b>Ctrl + V</b></p>
+        <li>Moving</li>
+        <p>For move the item you have to press left mouse button on it and move it as you want. At the end of the moving you should just unpress left mouse button.</p>
+      </ul>
+    </div>
+    <div class="tab-content hide"></div>
+  </div>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>
