@@ -1,0 +1,285 @@
+@font-face
+  font-family: 'Open Sans'
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf")
+
+@import "font-awesome/font-awesome.scss"
+
+*
+  box-sizing: border-box
+
+body, html
+  margin: 0
+  padding: 0
+  height: 100%
+  width: 100%
+  font: 14px/16px 'Open Sans', sans-serif
+
+ul, li
+  padding: 0
+  margin: 0
+
+a, a:visited, a:link
+  color: #000
+  text-decoration: none
+
+.left
+  float: left
+
+.right
+  float: right
+
+.clearfix:after
+  content: " "
+  visibility: hidden
+  display: block
+  height: 0
+  clear: both
+
+#panel
+  position: absolute
+  z-index: 1000
+  width: 100%
+  background-color: #99b2ff
+  padding: 0 30px
+
+  #time
+    line-height: 20px
+
+  .mainMenu > li
+    display: inline-block
+    float: left
+    list-style: none
+    padding: 3px 20px 3px 10px
+
+    &:hover
+      background-color: #99c6ff
+
+    &:hover .subMenu
+      display: block
+      background-color: #99c6ff
+
+    .subMenu
+      position: absolute
+      padding-top: 5px
+      background-color: #99b2ff
+      display: none
+      list-style: none
+
+      li
+        display: block
+        padding: 5px 40px 5px 10px
+
+        &:hover
+          background-color: #99b2ff
+
+#work-area
+  padding-top: 35px
+  height: 100%
+  background: #fff url("../img/wrapper.jpg") no-repeat
+  background-size: cover
+  opacity: 1
+
+#newsPanel
+  position: absolute
+  width: 35%
+  height: 100%
+  right: -35%
+  top: 0
+  background-color: #99c6ff
+  overflow: auto
+  z-index: 1000
+
+  h3
+    margin: 0
+    text-align: center
+    line-height: 22px
+
+
+  .article
+    padding: 8px
+
+    .left
+      width: 70%
+
+    .right
+      width: 30%
+
+    .article_title
+      padding-bottom: 5px
+      font-weight: 600
+
+    .article_descr
+      text-align: justify
+
+    .article_img img
+      padding-left: 5%
+      height: 70px
+      width: 95%
+
+.icon
+  position: absolute
+  width: 60px
+  height: 60px
+  background-size: cover
+  border-radius: 50%
+  cursor: pointer
+
+  .item-title
+    position: absolute
+    bottom: -25px
+    color: #fff
+    left: 50%
+    transform: translate(-50%, -50%)
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+
+.tool-menu
+  padding: 2px
+  z-index: 1000
+  display: none
+  position: absolute
+  width: 150px
+  background-color: #cce
+
+  ul
+    list-style: none
+
+    li
+      display: block
+      padding: 5px 10px
+      border-bottom: 1px solid black
+
+      &:last-child
+        border: none
+
+      &:hover
+        background-color: #cee
+
+.dialog
+  display: none
+  position: absolute
+  padding: 5px
+  top: 15%
+  left: 35%
+  width: 30%
+  background-color: #E7E8E9
+  border: 1px solid black
+  border-radius: 5px
+
+  .dialog-title
+    margin: 8px 0 16px
+    text-align: center
+    font-size: 26px
+    font-weight: bold
+
+  .dialog-body
+    margin-bottom: 10px
+    padding-left: 5px
+
+  .dialog-btn
+    background-color: #d4edda
+    width: 85px
+    height: 30px
+    margin: 10px 5px 0
+    border-radius: 8px
+
+#searchDialog
+  left: 37.5%
+  width: 25%
+
+  h3
+    text-align: center
+    margin: 5px
+
+  input[name=query]
+    display: block
+    width: 95%
+    margin: 7px auto 5px
+    border-radius: 5%
+    padding: 3px
+
+  .search-close
+    position: absolute
+    top: 5px
+    right: 10px
+    font-size: 28px
+    cursor: pointer
+
+  .search-result
+    line-height: 25px
+
+.error
+  background-color: red
+
+.settingsDialog
+  position: absolute
+  display: none
+  top: 20%
+  left: 30%
+  width: 40%
+
+#tab-panel
+  position: relative
+
+  .tab
+    margin-bottom: -1px
+    background-color: #99c6ff
+    display: inline-block
+    border: 1px solid #000
+    border-radius: 10px 10px 0 0
+    padding: 3px 15px 5px
+    font-weight: bold
+    cursor: pointer
+
+    &:hover
+      background-color: #99a3ff
+
+  .active
+    background-color: #99a3ff
+    border-bottom: none
+
+  .tab-content
+    padding: 10px 10px
+    border: 1px solid #000
+    border-top: none
+    border-radius: 0 5px 5px 5px
+    background-color: #99c6ff
+    height: 340px
+
+    h3
+      margin: 15px 0 10px
+
+    #accountProfile h3
+      margin-top: 0
+
+    #desktopsSettings
+      border-radius: 3px
+
+      button[data-save]
+        color: #155724
+        background-color: #d4edda
+        border-color: #c3e6cb
+
+      button[data-load]
+        color: #004085
+        background-color: #cce5ff
+        border-color: #b8daff
+
+  .hide
+    display: none
+
+  #closeSettings
+    background-color: #f03
+
+.tutorial
+  padding-left: 26px !important
+
+  h3
+    margin-top: 0 !important
+
+  p
+    margin: 5px 0
+
+  li
+    font-weight: 600
