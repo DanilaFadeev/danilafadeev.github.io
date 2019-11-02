@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{110:function(n,e,r){"use strict";r.r(e),e.default="<script>\nexport default {\n  provide: {\n    theme: {\n      primary: '#29B6F6',\n      success: '#66BB6A',\n      danger: '#FF7043'\n    }\n  },\n  render() {\n    return this.$slots.default;\n  }\n};\n<\/script>\n"}}]);

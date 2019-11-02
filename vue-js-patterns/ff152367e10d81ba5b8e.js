@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{99:function(n,e,p){"use strict";p.r(e),e.default="<template functional>\n  <el-card>\n    <span>Name: {{ props.employee.name }}</span>\n    <span>Position: {{ props.employee.position }}</span>\n  </el-card>\n</template>\n"}}]);

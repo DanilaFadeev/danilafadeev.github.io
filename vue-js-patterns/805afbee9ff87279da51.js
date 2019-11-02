@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{102:function(e,n,r){"use strict";r.r(n),n.default="<template>\n  <ClickerLogger :increase-count=\"3\" />\n</template>\n\n<script>\nimport Clicker from './Clicker';\nimport withLogger from './withLogger';\n\nexport default {\n  components: { ClickerLogger: withLogger(Clicker) }\n};\n<\/script>\n"}}]);
